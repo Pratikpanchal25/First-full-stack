@@ -10,7 +10,7 @@ const app = express();
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://pratikpanchal20040502:psp2004@pratik.z9boe2j.mongodb.net/Form"
+      "mongodb://localhost:27017/first-full-stack"
     );
   } catch (error) {
     throw error;
