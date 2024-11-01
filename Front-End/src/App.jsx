@@ -7,7 +7,7 @@ function App(props) {
   const { register, handleSubmit } = useForm();
 
   const createUser = async (data) => {
-    await axios.post("http://localhost:8000/register", {
+    await axios.post("https://first-full-stack-evrl.onrender.com/register", {
       username: data.name,
       email: data.email,
       password: data.password,
