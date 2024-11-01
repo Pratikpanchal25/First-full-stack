@@ -11,7 +11,7 @@ const app = express();
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb:/pratikpanchal:psp2004@undefined/?replicaSet=atlas-kqnvwe-shard-0&ssl=true&authSource=admin"
+      "mongodb+srv://pratikpanchal20040502:psp2004@pratik.z9boe2j.mongodb.net"
     );
   } catch (error) {
     throw error;
@@ -22,7 +22,7 @@ app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
 
-// connectDB().then(() => console.log("MONGODB Connected"));
+connectDB().then(() => console.log("MONGODB Connected"));
 
 app.listen("8080", () => console.log(`The App Is Listening On 8080`));
 app.get("/", (req, res)=>{
