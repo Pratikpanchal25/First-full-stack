@@ -2,7 +2,8 @@ import { User } from "./user.model.js";
 
 const createUser = async (req, res) => {
 
-  
+  try {
+    
   const { username, email, password } = req.body;
 
   if ([username, email, password].some((field) => field == "")) {
@@ -25,6 +26,9 @@ const createUser = async (req, res) => {
   });
 
 
+  } catch (error) {
+    console.log(error)
+  }
 };
 
 export { createUser };
