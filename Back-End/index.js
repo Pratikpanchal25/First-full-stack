@@ -11,7 +11,7 @@ const app = express();
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb://localhost:27017/first-full-stack"
+      "mongodb:/pratikpanchal:psp2004@undefined/?replicaSet=atlas-kqnvwe-shard-0&ssl=true&authSource=admin"
     );
   } catch (error) {
     throw error;
