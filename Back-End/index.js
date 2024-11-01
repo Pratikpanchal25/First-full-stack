@@ -24,7 +24,7 @@ app.use(express.static("public"));
 
 // connectDB().then(() => console.log("MONGODB Connected"));
 
-app.listen(8080, () => console.log(`The App Is Listening On 8080`));
+app.listen("https://firstback-jrud81dn.b4a.run", () => console.log(`The App Is Listening On 8080`));
 
 app.use("/", router);
 
