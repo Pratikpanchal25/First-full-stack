@@ -24,7 +24,7 @@ app.use(express.static("public"));
 
 // connectDB().then(() => console.log("MONGODB Connected"));
 
-app.listen(process.env.PORT, () => console.log(`The App Is Listening On ${process.env.PORT}`));
+app.listen(8080, () => console.log(`The App Is Listening On 8080`));
 
 app.use("/", router);
 
